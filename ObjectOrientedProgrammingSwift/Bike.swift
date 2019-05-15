@@ -15,7 +15,7 @@ class Bike {
     var isOn: Bool
     var speed: Float = 0
     
-    init(brand:String, wheels:Int, engine:String) {
+    init(_ brand:String,_ wheels:Int,_ engine:String) {
         self.brand = brand
         self.wheels = wheels
         self.engine = engine
@@ -25,18 +25,15 @@ class Bike {
     func startMachine(){
         if isOn == false {
             isOn = true
-            print("Machine Started")
         } else {
-            print("Machine already started")
         }
     }
     
     func stopMachine() {
+        speed = 0
         if isOn == false {
             isOn = true
-            print("Machine Stopped")
         } else {
-            print("Machine already Stopped")
         }
     }
     
@@ -47,10 +44,4 @@ class Bike {
     func breakBike(speedRemoved: Float) {
         speed -= speedRemoved
     }
-    
-}
-
-struct Cat {
-    var name: String
-    var type: String
 }
