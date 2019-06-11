@@ -16,11 +16,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var turnOnButton: UIButton!
     @IBOutlet weak var turnOffButton: UIButton!
     
+    @IBOutlet weak var userTextField: UITextField!
+    
+    @IBOutlet weak var passTextField: UITextField!
+    
+    
     var myBike: Bike!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        passTextField.delegate = self
         
         myBike = Bike("Ducati",2,"Testastretta")
         
@@ -29,7 +36,16 @@ class ViewController: UIViewController {
         print("myBike brand :\(myBike.brand), engine :\(myBike.engine)")
         
     }
-
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "toDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail", let destination = segue.destination as? DetailViewController {
+            destination.nameFromPreviousView = userTextField.text
+        }
+    }
+    
     @IBAction func speedUp(_ sender: UIButton) {
         myBike.speed += 10
         updateSpeed()
@@ -47,3 +63,19 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userTextField{
+            if textField.text == ""{
+                let alert = UIAlertController(title: "Error", message: "Username should not empty.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                passTextField.becomeFirstResponder()
+            }
+        } else {
+            passTextField.resignFirstResponder()
+        }
+        return true
+    }
+}

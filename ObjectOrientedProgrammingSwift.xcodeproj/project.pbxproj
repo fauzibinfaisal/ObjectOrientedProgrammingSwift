@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB6B3048228D63C400BC2433 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B3047228D63C400BC2433 /* DetailViewController.swift */; };
 		EBFAF225228BE76800E8225C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAF224228BE76800E8225C /* AppDelegate.swift */; };
 		EBFAF227228BE76800E8225C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAF226228BE76800E8225C /* ViewController.swift */; };
 		EBFAF22A228BE76800E8225C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFAF228228BE76800E8225C /* Main.storyboard */; };
 		EBFAF22C228BE76900E8225C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFAF22B228BE76900E8225C /* Assets.xcassets */; };
 		EBFAF22F228BE76900E8225C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFAF22D228BE76900E8225C /* LaunchScreen.storyboard */; };
 		EBFAF237228BE7BB00E8225C /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAF236228BE7BB00E8225C /* Bike.swift */; };
+		EBFAF23F228C096000E8225C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAF23E228C096000E8225C /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB6B3047228D63C400BC2433 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EBFAF221228BE76800E8225C /* ObjectOrientedProgrammingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectOrientedProgrammingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFAF224228BE76800E8225C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBFAF226228BE76800E8225C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		EBFAF22E228BE76900E8225C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBFAF230228BE76900E8225C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFAF236228BE7BB00E8225C /* Bike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
+		EBFAF23E228C096000E8225C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = ../RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				EBFAF224228BE76800E8225C /* AppDelegate.swift */,
+				EBFAF23E228C096000E8225C /* RoundedButton.swift */,
 				EBFAF226228BE76800E8225C /* ViewController.swift */,
 				EBFAF228228BE76800E8225C /* Main.storyboard */,
+				EB6B3047228D63C400BC2433 /* DetailViewController.swift */,
 				EBFAF22B228BE76900E8225C /* Assets.xcassets */,
 				EBFAF22D228BE76900E8225C /* LaunchScreen.storyboard */,
 				EBFAF230228BE76900E8225C /* Info.plist */,
@@ -140,7 +146,9 @@
 			files = (
 				EBFAF227228BE76800E8225C /* ViewController.swift in Sources */,
 				EBFAF225228BE76800E8225C /* AppDelegate.swift in Sources */,
+				EB6B3048228D63C400BC2433 /* DetailViewController.swift in Sources */,
 				EBFAF237228BE7BB00E8225C /* Bike.swift in Sources */,
+				EBFAF23F228C096000E8225C /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
